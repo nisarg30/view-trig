@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/data'); // Replace with your backend URL
+        const response = await axios.get('https://view-trig.onrender.com/data'); // Replace with your backend URL
         setData(response.data);
         setLoading(false);
       } catch (error) {
